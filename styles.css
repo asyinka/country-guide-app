@@ -1,0 +1,103 @@
+:root{
+    --backgroundColor: #bbfc87ea;
+    --primaryFont: "Poppins", sans-serif;
+    --fontWeight: 700;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--primaryFont);
+}
+body{
+    background-color: var(--backgroundColor);
+}
+h1 {
+    text-align: center;
+    color: rgb(214, 178, 178);
+    margin-bottom: 10px;
+}
+article{
+    text-align: center;
+}
+#container{
+    background-color: rgb(63, 58, 58);
+    width: 80vw;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    padding: 3em;
+    color: slategray;
+    font-weight: var(--fontWeight);
+}
+#countrySearch-div{
+    display: grid;
+    grid-template-columns: 9fr 2fr;
+    gap: 10px;
+}
+#country-input{
+    border: none;
+    outline: none;
+    border-bottom: 3px solid rgb(182, 121, 9);
+    font-size: 1em;
+    padding: 10px 10px;
+    background-color: #e0ecec;
+    border-radius: 20px;
+}
+
+#country-search-button{
+    background-color: #0ead0e;
+    font-size: 1em;
+    background-color: #3d64e6;
+    color: #ffffff;
+    padding: 0.8em 0;
+    border: none;
+    border-radius: 1.5em;
+    font-weight: 600;
+}
+#resultsContainer{
+    margin-top: 1.25em;
+}
+#container .imageBox{
+    width: 100%;
+    background-color: rgba(243, 139, 91, 0.849);
+    border-radius: 20px;
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+#container img {
+    /* display: block; */
+    width: 200px;
+    object-fit: contain;
+    /* margin: 10px auto; */
+}
+#officialName{
+    color: #d1e9e9;
+    margin: 10px;
+    text-align: center;
+}
+.wrapper{
+    display: flex;
+    padding: 10px;
+    padding-bottom: 2px;
+}
+.wrapper h3{
+    font-size: 1.5em;
+    color: #d2dbdb;
+    font-weight: 600;
+}
+.wrapper span{
+    font-weight: 600;
+    font-size: 1.5em;
+    margin-left: 15px;
+    color: rgb(248, 222, 188);
+    text-shadow: 2px 2px 4px #333;
+}
+.wrapper #errorText{
+    color: red;
+}
